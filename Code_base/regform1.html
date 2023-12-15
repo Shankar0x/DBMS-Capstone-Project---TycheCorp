@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="style4.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="form-v10">
+	<div class="page-content">
+		<div class="form-v10-content">
+			<form class="form-detail" action="homepage.html" id="myform">
+				<div class="form-left">
+					<h2>Personal Information</h2>
+						<div class="form-row">
+							<input type="text" name="full_name" id="full_name" class="input-text" placeholder="Full Name" pattern = "[A-Za-z]{2,60}" required>
+						</div>
+						<div class="form-row input-text">
+							<input type="date" id="dob" name="dob" class="input-text" required >
+						</div>
+						<div class="form-row">
+							<input type="tel" name="phone_no" id="phone_no" class="input-text" placeholder="Phone (10 digits)" pattern = "[1-9]{1}[0-9]{9}" required>
+						</div>
+						<div class="form-row">
+							<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+						</div>
+					<div class="form-row">
+						<input type="text" name="ifsc" class="ifsc" id="ifsc" placeholder="IFSC Code" pattern = "[A-Z]{4}[0]{1}[0-9]{6}" required>
+					</div>
+					<div class="form-row">
+						<input type="text" name="pan" class="pan" id="pan" placeholder="PAN" pattern = "[A-Z]{5}[0-9]{4}[A-Z]{1}" required>
+					</div>
+				</div>
+				<div class="form-right">
+					<h2>Financial Allowances</h2>
+					<div class="form-row">
+						<input type="text" name="bondallowance" class="bondallowance" id="bondallowance" placeholder="Bond Allowance" pattern = "[0-9]+">
+					</div>
+					<div class="form-row">
+						<input type="text" name="stockallowance" class="stockallowance" id="stockallowance" placeholder="Stock Allowance" pattern = "[0-9]+">
+					</div>
+					<div class="form-row">
+						<input type="text" name="mfallowance" class="mfallowance" id="mfallowance" placeholder="Mutual Fund Allowance" pattern = "[0-9]+">
+					</div>
+					<div class="form-row">
+						<input type="text" name="reallowance" class="reallowance" id="reallowance" placeholder="Real Estate Allowance" pattern = "[0-9]+">
+					</div>
+					<div class="form-row-last">
+						<input type="submit" name="register" class="register" value="Let me in!">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+<script>
+	$('.datepicker').datepicker();
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

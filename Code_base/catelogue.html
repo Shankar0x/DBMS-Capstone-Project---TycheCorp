@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "cateloguestyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Something i will remove soon-->
+  </head>
+  <body>
+      <!--Nav bar-->
+<div class="navbar1">
+    <div class="logo">
+        <a href = "homepage.html" id="logolink">
+        <img class = "logo" src="logo.png">
+    </a>
+    </div>
+  <div class="aligning">
+    <a id="ahov" href="homepage.html">Home</a>
+    <a id="ahov" href="investlanding.html">Invest</a>
+    <a id="ahov" href="catelogue.html">Catalogue</a>
+    <a id="ahov" href="track.html">Track</a>
+      <div class="dropdown1">
+      <button class="dropbtn">
+          Profile
+        <i class="fa fa-caret-down"></i>&ensp;&ensp;&ensp;
+      </button>
+      <div class="dropdown-content">
+        <a id="ahov" href="dashboard.html">Dashboard</a>
+        <a id="ahov" href="index.html">Sign Out</a>
+      </div>
+    </div> 
+    <!--Nav bar-->
+    <section class="content">
+    <div class="centeralign">
+    <b class="investhead">
+       Welcome to the catalogue!<br> 
+    </b>
+    <b class="investhead">
+        Select the scheme category you wish to invest in and pick out the right scheme for you!!
+        <br>
+        <br>
+    </b>
+    <div class="dropdown">
+        <select class="btn btn-lg btn-block dropdown-toggle" id="btn-outline-danger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <option class="dropdown-item" id="astyle" href="#">Select</option>
+          <option class="dropdown-item" id="astyle" value = "bonds" href="#">Bonds</option>
+          <option class="dropdown-item" id="astyle" value = "mf" href="#">Mutual Funds</option>
+          <option class="dropdown-item" id="astyle" value = "re" href="#">Real Estate</option>
+          <option class="dropdown-item" id="astyle" value = "stocks" href="#">Stocks</option>
+        </div>
+    </select>
+    </div>
+</div>
+   <div class="stocks box">
+    <table cellspacing="20" cellpadding="30">
+        <tr class="tabhead">
+            <th>Stock ID</th>
+            <th style="width:580px">Name</th>
+            <th>Investments(in Cr.)</th>
+            <th>Unit Price</th>
+            <th>Population Enrolled</th>
+        </tr>
+        <tr>
+            <td>ST001</td>
+            <td>ICICI Bank</td>
+            <td>963.00</td>
+            <td>700.45</td>
+            <td>586</td>
+        </tr>
+        <tr>
+            <td>ST002</td>
+            <td>Wipro</td>
+            <td>3485.01</td>
+            <td>665.00</td>
+            <td>168</td>
+        </tr>
+        <tr>
+            <td>ST003</td>
+            <td>Adithya Birla Sun Life AMC</td>
+            <td>21.00</td>
+            <td>505.35</td>
+            <td>86</td>
+        </tr>
+        
+    </table>
+   </div>
+   <div class="bonds box">
+        <table cellspacing="20" cellpadding="30">
+            <tr class="tabhead">
+                <th style="width:120px">Bond ID</th>
+                <th style="width:550px">Name</th>
+                <th>Principal Amt</th>
+                <th>Rate Of Interest</th>
+                <th style="width:120px">Tenure</th>
+                <th>Risk Index</th>
+                <th>Population Enrolled</th>
+            </tr>
+            <tr>
+                <td>BD001</td>
+                <td>Government of India Savings Bond </td>
+                <td>1000</td>
+                <td>7.75%</td>
+                <td>7 years</td>
+                <td><span style="color:green">1</span></td>
+                <td>548</td>
+            </tr>
+            <tr>
+                <td>BD002</td>
+                <td>RBI Savings Bond</td>
+                <td>1000</td>
+                <td>8.00%</td>
+                <td>6 years</td>
+                <td><span style="color:orange">4</span></td>
+                <td>608</td>
+            </tr>
+                        
+        </table>
+    </div>
+    <div class="mf box">
+        <table cellspacing="20" cellpadding="30">
+            <tr class="tabhead">
+                <th style="width:120px">Mutual Fund ID</th>
+                <th style="width:550px">Mutual Fund Name</th>
+                <th>SIP</th>
+                <th>Maturity</th>
+                <th>Interest</th>
+                <th>Fund Type</th>
+            </tr>
+            <tr>
+                <td>MF001</td>
+                <td>ICICI Prudential Manufacturing Fund</td>
+                <td>1000</td>
+                <td>1 year</td>
+                <td>3.21%</td>
+                <td>open-ended</td>
+            </tr>
+            <tr>
+                <td>MF002</td>
+                <td>NIPPON INDIA INTERVAL FUND- MONTHLY</td>
+                <td>1000</td>
+                <td>2 years</td>
+                <td>1.25%</td>
+                <td>open-ended equity</td>
+            </tr>
+            <tr>
+                <td>MF003</td>
+                <td>TATA large cap fund </td>
+                <td>1000</td>
+                <td>2 years</td>
+                <td>1.47%</td>
+                <td>open-ended</td>
+            </tr>           
+        </table>
+    </div>
+    <div class="re box">
+        <table cellspacing="20" cellpadding="30">
+            <tr class="tabhead">
+                <th style="width:120px">Real Estate ID</th>
+                <th style="width:320px">Name</th>
+                <th style="width:650px">Address</th>
+                <th>Sq.Feet</th>
+                <th>Rate Per Sq.Feet</th>
+            </tr>
+            <tr>
+                <td>RE001</td>
+                <td>Press Colony 1</td>
+                <td>Press Colony, Coimbatore,Tamil Nadu</td>
+                <td>1500</td>
+                <td>750.00</td>
+            </tr>
+            <tr>
+                <td>RE002</td>
+                <td>Murbad 1</td>
+                <td>Murbad, Mumbai, Maharashtra</td>
+                <td>36630</td>
+                <td>270.27</td>
+            </tr>          
+        </table>
+    </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Script for hiding tables-->
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){
+                $(this).find("option:selected").each(function(){
+                    var optionValue = $(this).attr("value");
+                    if(optionValue){
+                        $(".box").not("." + optionValue).hide();
+                        $("." + optionValue).show();
+                    } else{
+                        $(".box").hide();
+                    }
+                });
+            }).change();
+        });
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

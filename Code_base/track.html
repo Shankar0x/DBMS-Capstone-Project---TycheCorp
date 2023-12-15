@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="trackstyle.css">
+  </head>
+  <body>
+      <!--Nav bar-->
+    <div class="navbar1">
+    <div class="logo">
+        <a href = "homepage.html" id="logolink">
+        <img class = "logo" src="logo.png">
+    </a>
+    </div>
+  <div class="aligning">
+    <a id="ahov" href="homepage.html">Home</a>
+    <a id="ahov" href="investlanding.html">Invest</a>
+    <a id="ahov" href="catelogue.html">Catalogue</a>
+    <a id="ahov" href="track.html">Track</a>
+      <div class="dropdown1">
+      <button class="dropbtn">
+          Profile
+        <i class="fa fa-caret-down"></i>&ensp;&ensp;&ensp;
+      </button>
+      <div class="dropdown-content">
+        <a id="ahov" href="dashboard.html">Dashboard</a>
+        <a id="ahov" href="index.html">Sign Out</a>
+      </div>
+    </div> 
+    <!--Nav bar-->
+    <section class = "datepickersec">
+        <div class="tracktopic">
+            <p class = tracktopichead><b>Enter the starting and ending date to track all your records</b></p>
+        </div>
+        <div class="datepickerdiv"><input type="text" class = "btn btn-light btn-lg" name="daterange" value="01/01/2018 - 01/15/2018" /></div>        
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        $(function() {
+          $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+          }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+          });
+        });
+        </script>
+  </body>
+</html>

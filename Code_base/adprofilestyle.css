@@ -1,0 +1,109 @@
+/*The common css*/
+body {
+    background-image: linear-gradient(45deg, black, rgb(36, 36, 36));
+    color: white ;
+}
+
+.nav-link:hover {
+    background-color: #ff0000 !important
+}
+
+.nav-link svg {
+    transition: all 1s
+}
+
+.nav-link:hover svg {
+    transform: rotate(360deg)
+}
+.logo1
+{
+    height: 33px;
+}
+.al-left{
+    position: absolute;
+    left:5px;
+}
+.text-muted1 {
+    color: #ff0000;
+    padding: 5px;
+}
+/*end of common css*/
+
+.basesec{
+    position: absolute;
+    left: 260px;
+    top:20px;
+    width:1220px;
+    height:700px;
+    padding: 70px;
+}
+.basediv
+{
+    position: absolute;
+    width: 1100px;
+    height: 650px;
+}
+.basediv::-webkit-scrollbar {
+    width:10px;
+}
+.basediv::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3); 
+   
+}
+.basediv::-webkit-scrollbar-thumb {
+  
+    -webkit-box-shadow: inset 0 0 10px rgb(255, 0, 0); 
+}
+.salutation ,.hr1
+{
+    color: rgba(255, 0, 0);
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    top:-20px;
+}
+#btn-outline-danger{
+    color: rgb(255, 255, 255,0.8);
+    border-color: rgb(255, 255, 255,0.8);
+}
+#btn-outline-danger:hover{
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255,0.8);
+  font-weight: 700;
+}  
+.alignbtn
+{
+   float: right;
+   position: relative;
+   top:-20px;
+}
+
+table,tr,td
+{
+    border: 3px solid rgb(151, 151, 151);
+    min-width: block;
+    padding-top: 20px;
+    border-radius: 6px 6px 6px 6px;
+}
+th
+{
+    font-weight:700 ;
+    color: rgb(255, 0, 0);
+    min-width: 350px;
+}
+td{
+    color: white;
+    min-width: 450px;
+    background-color: rgba(255, 0, 0, 0.781);
+}
+th,td
+{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.tablealign
+{
+    position: absolute;
+    left:150px;
+    top:0px;
+}
